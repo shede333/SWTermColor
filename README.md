@@ -43,6 +43,11 @@ effect.text(None)  # 删除默认的提示文案
 print(effect(" 1") + effect(" + ", bg_color="cyan") + effect("2") + effect(" = ", bg_color="cyan") + effect("3 "))
 ```
 
+## 截图（ScreenShot）
+
+![image1](https://raw.githubusercontent.com/shede333/SWTermColor/master/screenshot/termnial.png)
+
+
 ## 致谢
 
 * "swtermcolor/termcolor.py"文件，来自于[termcolor 1.1.0](https://pypi.org/project/termcolor/)  

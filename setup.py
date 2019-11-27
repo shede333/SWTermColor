@@ -19,8 +19,8 @@ setup(
     version='1.0',  # 包版本
     author='shede333',  # 作者
     author_email='333wshw@163.com',  # 作者邮箱
-    keywords='term terminal color',
-    description='simple termcolor wrapper',  # 简单描述
+    keywords='CLI cli term terminal color',
+    description='CLI终端输出彩色的文本, simple termcolor wrapper',  # 简单描述
     long_description=README,
     long_description_content_type='text/markdown',
     url='https://github.com/shede333/SWTermColor',  # 包的主页
