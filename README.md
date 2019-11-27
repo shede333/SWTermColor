@@ -6,6 +6,8 @@
 
 支持 python2 + python3;
 
+注意：不同的终端软件、不同Shell，的输出效果会有些许的不同。
+
 ## Install
 
 ```
