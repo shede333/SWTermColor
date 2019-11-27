@@ -25,7 +25,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/shede333/SWTermColor',  # 包的主页
     packages=find_packages(),  # 包
-    python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4',
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Natural Language :: Chinese (Simplified)",

@@ -4,6 +4,8 @@
 
 同时，也借鉴了 [termcolor2库](https://pypi.org/project/termcolor2/)的一些思想;
 
+支持 python2 + python3;
+
 ## Install
 
 ```
