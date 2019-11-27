@@ -16,11 +16,22 @@ pip install SWTermColor
 
 ## Example Modules:
 
+文本颜色，都是以 **"c_"** 开头的方法；  
+背景色，都是以 **"b_"** 开头的方法；  
+文字特性(加粗等)，都是以 **"a_"** 开头的方法；    
+
 ```python
 
 from swtermcolor import SWTermColor
+from swtermcolor import ColorPrint
+from swtermcolor import PrintColor
 
-print(SWTermColor("hello, sw "))
+# 注意：
+# SWTermColor == ColorPrint == PrintColor, 三者都是等价的类名，根据喜好选用
+
+print(PrintColor("hello, PrintColor sw"))
+print(ColorPrint("hello, ColorPrint sw"))
+print(SWTermColor("hello, SWTermColor sw"))
 print(SWTermColor("hello, sw red").c_red())
 print(SWTermColor("hello, sw red").c_blue().c_red())
 print(SWTermColor().text("hello, sw red replace").c_red())
@@ -31,8 +42,9 @@ print(SWTermColor("hello, sw red bg_blue bold").c_red().b_blue().a_bold())
 print(SWTermColor("hello, sw red bg_blue bold dark").c_red().b_blue().a_bold().a_dark())
 print(SWTermColor("hello, sw red blue bold reverse(反转)").c_red().b_blue().a_bold().a_reverse())
 
-text = "hello, sw red bg_blue bold 文本 与 样式 分离"
-effect = SWTermColor().c_red().b_blue().a_bold()
+
+text = "hello, sw red bg_blue bold 文本 与 样式 分离"  # 文本
+effect = SWTermColor().c_red().b_blue().a_bold()  # 特效 
 print(effect)  # 输出空行
 print(effect(text))  # 正常使用方法
 print(effect(text, "color临时改为grey", color="grey"))  # 临时改变文本颜色

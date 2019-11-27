@@ -34,7 +34,6 @@ setup(
         "Operating System :: POSIX",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",

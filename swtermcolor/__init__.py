@@ -5,3 +5,7 @@ __author__ = 'shede333'
 """
 
 from .swtermcolor import SWTermColor
+
+# 等价的类名
+ColorPrint = SWTermColor
+PrintColor = SWTermColor
