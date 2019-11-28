@@ -14,24 +14,30 @@ class SWTermColor(object):
     _bg_color = None
     _text_attrs = None
 
-    def __init__(self, string=None, color=None, bg_color=None, attrs=None, sep=", "):
-        self.text(string)
+    def __init__(self, text=None, prefix_text=None, sep=", ", color=None, bg_color=None,
+                 attrs=None):
+        self._string = text
+        self._prefix_text = prefix_text
+        self._sep = sep
         self.color = color
         self.bg_color = bg_color
         self.text_attrs = attrs
-        self.sep = sep
+
+    def print(self, *args, **kwargs):
+        print(self.colored(*args, **kwargs))
 
     def colored(self, *args, **kwargs):
-        text_list = []
-        if self._string:
-            text_list.append(self._string)
-        if args:
-            text_list.extend(args)
-        sep = self.sep
         if "sep" in kwargs:
             sep = kwargs["sep"]
             del kwargs["sep"]
-        text = sep.join(text_list)
+        else:
+            sep = self._sep
+        if args:
+            text = sep.join(args)
+        else:
+            text = self._string
+        if self._prefix_text:
+            text = self._prefix_text + (text if text else "")
 
         params = dict(color=self.color, on_color=self.bg_color, attrs=self.text_attrs)
         if kwargs:
@@ -56,10 +62,6 @@ class SWTermColor(object):
 
     def __radd__(self, other):
         return other + self.__str__()
-
-    def text(self, text):
-        self._string = text
-        return self
 
     @property
     def color(self):
