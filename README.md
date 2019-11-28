@@ -67,4 +67,8 @@ print(effect(" 1") + effect(" + ", bg_color="cyan") + effect("2") + effect(" = "
 ## 致谢
 
 * "swtermcolor/termcolor.py"文件，来自于[termcolor 1.1.0](https://pypi.org/project/termcolor/)  
-* 设计思想借鉴了：[termcolor2](https://pypi.org/project/termcolor2/)  
+* 设计思想借鉴了：[termcolor2](https://pypi.org/project/termcolor2/)
+
+## 待完成的功能
+
+1. 内置一些彩色打印模板，类似警告、错误等；  
