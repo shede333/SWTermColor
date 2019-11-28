@@ -1,12 +1,13 @@
 # SWTermColor
 
-封装了 [termcolor库](https://pypi.org/project/termcolor/)，更方便使用了；
+支持在终端打印彩色文案，效果如最下面截图；
 
+封装了 [termcolor库](https://pypi.org/project/termcolor/)，更方便使用了；
 同时，也借鉴了 [termcolor2库](https://pypi.org/project/termcolor2/)的一些思想;
 
 支持 python2 + python3;
 
-注意：不同的终端软件、不同Shell，的输出效果会有些许的不同。
+**注意**：不同的终端软件、不同Shell，的输出效果会有些许的不同。
 
 ## Install
 
