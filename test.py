@@ -4,20 +4,22 @@ __author__ = 'shede333'
 """
 
 from swtermcolor import SWTermColor
+# 或者
 from swtermcolor import ColorPrint
+# 或者
 from swtermcolor import PrintColor
 
 # 注意：
 # SWTermColor == ColorPrint == PrintColor, 三者都是等价的类名，根据喜好选用
-SWTermColor("hello, SWTermColor").p()  # p 即 print的缩写
-PrintColor("hello, PrintColor").p()
-ColorPrint("hello, ColorPrint").p()
+SWTermColor().c_red().p("hello, SWTermColor")  # p 即 print的缩写
+PrintColor().c_red().p("hello, PrintColor")
+ColorPrint().c_red().p("hello, ColorPrint")
 
 
 # 常用的几种打印方法：
-print(SWTermColor("hello, sw red").c_red())
 SWTermColor("hello, sw red").c_red().p()  # 先设置文本，再设置效果
 SWTermColor().c_red().p("hello, sw red")  # 先设置效果，再设置文本
+print(SWTermColor("hello, sw red").c_red())  # 使用print方法打印
 # 默认以", "为分隔符，打印所有文本
 SWTermColor().c_red().p("hello", "sw", "red")
 # 以" * "为分隔符，打印所有文本
