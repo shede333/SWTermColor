@@ -23,7 +23,8 @@ class SWTermColor(object):
         self.bg_color = bg_color
         self.text_attrs = attrs
 
-    def print(self, *args, **kwargs):
+    def p(self, *args, **kwargs):
+        # 由于"print"在py2上是关键字，所以这个方法就命令为：p
         print(self.colored(*args, **kwargs))
 
     def colored(self, *args, **kwargs):
