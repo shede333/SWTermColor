@@ -89,3 +89,5 @@ print(effect(" 1") + effect(" + ", bg_color="cyan") + effect("2") + effect(" = "
 ## 待完成的功能
 
 1. 内置一些彩色打印模板，类似警告、错误等(✔: \u2714, ✘: \u2718)；  
+2. 集成 [colorama](https://pypi.org/project/colorama/)项目的功能
+
